@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Suave — música e dança, no seu tempo</title>
+<meta name="description" content="Suave: um espaço quieto para aprender, praticar e se mover, em ritmo próprio." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="#topo" class="marca">Suave</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navMenu">
+      <li><a href="#categorias">Ritmos</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#comunidade">Comunidade</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="topo">
+  <svg class="hero-traco" viewBox="0 0 1400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,180 C200,60 380,260 600,150 C820,40 900,220 1100,140 C1250,80 1320,180 1400,120"
+      stroke="#D9CFE8" stroke-width="1.2" />
+  </svg>
+  <div class="wrap hero-conteudo">
+    <p class="eyebrow">Música &amp; Dança</p>
+    <h1>Dance como quem respira.<br>No seu <em>tempo</em>, no seu compasso.</h1>
+    <p class="lead">Um espaço quieto para aprender, praticar e se mover — sem pressa, sem plateia, só o seu ritmo.</p>
+    <div class="cta-linha">
+      <a href="#agenda" class="btn btn-primario">Encontrar minha aula</a>
+      <a href="#categorias" class="btn btn-secundario">Explorar ritmos</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== CATEGORIAS ===== -->
+<section id="categorias" class="wrap">
+  <div class="secao-topo suave-in">
+    <p class="rotulo">Ritmos</p>
+    <h2 class="titulo-secao">Cada estilo, no seu <em>próprio silêncio</em></h2>
+    <p class="subtitulo-secao">Quatro caminhos para começar — escolha o que combina com o seu momento hoje.</p>
+  </div>
+
+  <div class="grade-categorias">
+    <article class="card-categoria suave-in">
+      <div class="icone-categoria">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 34c0-6 4-10 10-10s10 4 10 10" />
+          <path d="M14 34h20" />
+          <circle cx="24" cy="14" r="6" />
+        </svg>
+      </div>
+      <h3>Ballet Clássico</h3>
+      <p>Técnica, postura e presença.</p>
+      <span class="tag lavanda">Calmo</span>
+    </article>
+
+    <article class="card-categoria suave-in">
+      <div class="icone-categoria">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 30c4-10 10-16 14-16s10 6 14 16" />
+          <path d="M14 30c2-6 6-10 10-10s8 4 10 10" />
+        </svg>
+      </div>
+      <h3>Jazz Contemporâneo</h3>
+      <p>Fluidez, expressão e corpo livre.</p>
+      <span class="tag rosa">Fluido</span>
+    </article>
+
+    <article class="card-categoria suave-in">
+      <div class="icone-categoria">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 24c3-6 3 6 6 0s3 6 6 0 3 6 6 0 3 6 6 0 3 6 6 0" />
+        </svg>
+      </div>
+      <h3>Lo-Fi Chill</h3>
+      <p>Trilhas leves para acompanhar o dia.</p>
+      <span class="tag azul">Tranquilo</span>
+    </article>
+
+    <article class="card-categoria suave-in">
+      <div class="icone-categoria">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="22" cy="30" rx="9" ry="7" />
+          <path d="M29 25 L36 10" />
+          <circle cx="36" cy="10" r="2.6" />
+        </svg>
+      </div>
+      <h3>Acústico</h3>
+      <p>Voz e violão, sem pressa nenhuma.</p>
+      <span class="tag bege">Íntimo</span>
+    </article>
+  </div>
+</section>
+
+<!-- ===== AGENDA ===== -->
+<section id="agenda" class="alt">
+  <div class="wrap">
+    <div class="secao-topo suave-in">
+      <p class="rotulo">Agenda</p>
+      <h2 class="titulo-secao">Sua semana, <em>organizada com calma</em></h2>
+      <p class="subtitulo-secao">Escolha o dia e veja o que está reservado para você.</p>
+    </div>
+
+    <div class="abas-dias suave-in" id="abasDias">
+      <button class="aba-dia ativa" data-dia="seg">Segunda</button>
+      <button class="aba-dia" data-dia="ter">Terça</button>
+      <button class="aba-dia" data-dia="qua">Quarta</button>
+      <button class="aba-dia" data-dia="qui">Quinta</button>
+      <button class="aba-dia" data-dia="sex">Sexta</button>
+    </div>
+
+    <div class="lista-agenda ativa suave-in" data-dia-conteudo="seg">
+      <div class="linha-agenda">
+        <span class="hora">08:00</span>
+        <span class="nome">Ballet Clássico — Iniciante</span>
+        <span class="ponto-categoria lavanda"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+      <div class="linha-agenda">
+        <span class="hora">10:30</span>
+        <span class="nome">Playlist Lo-Fi Chill — Manhã</span>
+        <span class="ponto-categoria azul"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+      <div class="linha-agenda">
+        <span class="hora">18:00</span>
+        <span class="nome">Jazz Contemporâneo — Nível livre</span>
+        <span class="ponto-categoria rosa"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+    </div>
+
+    <div class="lista-agenda" data-dia-conteudo="ter">
+      <div class="linha-agenda">
+        <span class="hora">09:00</span>
+        <span class="nome">Acústico — Roda de violão</span>
+        <span class="ponto-categoria bege"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+      <div class="linha-agenda">
+        <span class="hora">17:30</span>
+        <span class="nome">Ballet Clássico — Intermediário</span>
+        <span class="ponto-categoria lavanda"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+    </div>
+
+    <div class="lista-agenda" data-dia-conteudo="qua">
+      <div class="linha-agenda">
+        <span class="hora">08:30</span>
+        <span class="nome">Playlist Lo-Fi Chill — Foco</span>
+        <span class="ponto-categoria azul"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+      <div class="linha-agenda">
+        <span class="hora">19:00</span>
+        <span class="nome">Jazz Contemporâneo — Iniciante</span>
+        <span class="ponto-categoria rosa"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+    </div>
+
+    <div class="lista-agenda" data-dia-conteudo="qui">
+      <div class="linha-agenda">
+        <span class="hora">09:00</span>
+        <span class="nome">Ballet Clássico — Alongamento</span>
+        <span class="ponto-categoria lavanda"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+      <div class="linha-agenda">
+        <span class="hora">18:30</span>
+        <span class="nome">Acústico — Composição livre</span>
+        <span class="ponto-categoria bege"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+    </div>
+
+    <div class="lista-agenda" data-dia-conteudo="sex">
+      <div class="linha-agenda">
+        <span class="hora">10:00</span>
+        <span class="nome">Playlist Lo-Fi Chill — Encerramento da semana</span>
+        <span class="ponto-categoria azul"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+      <div class="linha-agenda">
+        <span class="hora">17:00</span>
+        <span class="nome">Aula aberta — Todos os ritmos</span>
+        <span class="ponto-categoria rosa"></span>
+        <span class="acao-agenda">+ agenda</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMUNIDADE ===== -->
+<section id="comunidade" class="wrap">
+  <div class="secao-topo suave-in">
+    <p class="rotulo">Comunidade</p>
+    <h2 class="titulo-secao">Pequenas histórias, <em>sem pressa</em></h2>
+    <p class="subtitulo-secao">O que quem pratica com a gente tem sentido, em poucas palavras.</p>
+  </div>
+
+  <div class="grade-comunidade">
+    <div class="card-depoimento suave-in">
+      <div class="avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Avatar de Marina"></div>
+      <p class="frase">Aprendi a ir com calma, e isso mudou como eu danço.</p>
+      <p class="autor">Marina · Ballet Clássico</p>
+    </div>
+    <div class="card-depoimento suave-in">
+      <div class="avatar"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=200&auto=format&fit=crop" alt="Avatar de Kaio"></div>
+      <p class="frase">O espaço é tão tranquilo que virou minha pausa da semana.</p>
+      <p class="autor">Kaio · Lo-Fi Chill</p>
+    </div>
+    <div class="card-depoimento suave-in">
+      <div class="avatar"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="Avatar de Helena"></div>
+      <p class="frase">Nunca me senti pressionada a acompanhar ninguém.</p>
+      <p class="autor">Helena · Jazz Contemporâneo</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="alt">
+  <div class="wrap cta-final suave-in">
+    <h2>Seu próximo passo pode <em>esperar você</em>.</h2>
+    <p>Marque uma aula experimental gratuita, no ritmo que fizer sentido pra você.</p>
+    <a href="#" class="btn btn-primario">Agendar aula experimental</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="marca-rodape">Suave</span>
+    <ul>
+      <li><a href="#categorias">Ritmos</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#comunidade">Comunidade</a></li>
+    </ul>
+    <span class="copy">© 2026 Suave</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
